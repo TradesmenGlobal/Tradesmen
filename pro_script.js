@@ -10,6 +10,10 @@
         layoutMode: 'fitRows'
     });
 
+    // Card media is a fixed height (see theme.css), but relayout once everything
+    // has loaded as a safety net for slow/lazy images.
+    $(window).on('load', function(){ $projects.isotope('layout'); });
+
     $('ul.filters > li').on('click', function(e){
 
         e.preventDefault();

@@ -1,4 +1,4 @@
-User-agent:Googlebot
+User-agent: *
 Disallow:
 
-sitemap: http://tradesmenglobal.com//sitemap.xml
+Sitemap: https://tradesmenglobal.com/sitemap.xml
