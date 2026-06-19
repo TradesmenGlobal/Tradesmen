@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#FAF7EF"/>
+  <rect x="10" y="10" width="380" height="280" fill="none" stroke="#E7E1D3" stroke-width="2"/>
+  <text x="200" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#C8102E" text-anchor="middle" font-weight="bold">TRADES<tspan fill="#1E1B16">MEN</tspan></text>
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="12" fill="#8A8474" text-anchor="middle" letter-spacing="3">PHOTO COMING SOON</text>
+</svg>
