@@ -391,6 +391,18 @@ ul.filters > li.active > a { color: #fff !important; background-color: var(--tm-
 .card-hover .spec-list li { display: flex; justify-content: space-between; gap: 14px; font-size: .8rem; padding: 6px 2px; border-bottom: 1px solid rgba(255,255,255,.2); }
 .card-hover .spec-list li:last-child { border-bottom: 0; }
 .card-hover .spk { opacity: .9; } .card-hover .spv { font-weight: 600; white-space: nowrap; }
+/* Touch screens have no hover — hint that cards are tappable for specs.
+   The tap-to-reveal itself is wired in pro_script.js. */
+@media (hover: none) {
+  .projects .card-head { position: relative; }
+  .projects .card-head::after {
+    content: "Tap for specs"; position: absolute; right: 8px; bottom: 8px;
+    background: rgba(22,19,17,.72); color: #fff; font-family: var(--tm-font-body);
+    font-size: 11px; letter-spacing: .04em; padding: 3px 9px; border-radius: 999px;
+    pointer-events: none; z-index: 3; transition: opacity .2s ease;
+  }
+  .projects .card.spec-open .card-head::after { opacity: 0; }
+}
 h4.title { font-family: var(--tm-font-head) !important; color: var(--tm-ink) !important; }
 .card-btn { border-radius: var(--tm-radius-sm) !important; font-family: var(--tm-font-body) !important; font-weight: 500; }
 .card-btn:hover { background-color: var(--tm-red) !important; border-color: var(--tm-red) !important; }
