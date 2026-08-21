@@ -19,9 +19,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.02em;text-wra
 .nav{position:fixed;inset:0 0 auto;z-index:var(--z-nav);display:flex;align-items:center;justify-content:space-between;
   padding:18px 28px;transition:background .3s ease,box-shadow .3s ease,color .3s ease;color:var(--paper)}
 .nav.solid{background:rgba(250,249,246,.96);color:var(--t-ink);box-shadow:0 1px 0 var(--line-l);backdrop-filter:saturate(1.2) blur(6px)}
-.brand{font-weight:600;font-size:16px;letter-spacing:.01em}
-.brand b{color:var(--redhi);font-weight:600}
-.nav.solid .brand b{color:var(--red)}
+.brand{font-weight:600;font-size:16px;letter-spacing:.01em;color:var(--t-ink)}
+.brand b{color:var(--red);font-weight:600}
 .nav-links{display:flex;gap:26px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;opacity:.92}
 .nav-links a{transition:color .2s} .nav-links a:hover{color:var(--redhi)}
 .nav.solid .nav-links a:hover{color:var(--red)}
