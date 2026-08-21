@@ -139,15 +139,15 @@ section{padding:clamp(72px,9vw,128px) 0}
 .statement .btn-1{display:inline-block;margin-top:30px}
 
 /* footer */
-footer{background:var(--ink);color:var(--t-on-dark);padding:60px 0 30px;border-top:3px solid var(--red)}
+footer{background:var(--paper2);color:var(--t-mut);padding:60px 0 30px;border-top:3px solid var(--red)}
 .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1.4fr;gap:40px}
-.foot-brand{font-family:var(--serif);font-size:26px;color:#fff;margin-bottom:12px}
-.foot-brand b{color:var(--redhi)}
+.foot-brand{font-family:var(--serif);font-size:26px;color:var(--ink);margin-bottom:12px}
+.foot-brand b{color:var(--red)}
 .foot-tag{font-size:14px;max-width:30ch}
-.foot-h{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:16px}
-.foot-col a{display:block;margin-bottom:9px;font-size:14px;transition:color .2s}.foot-col a:hover{color:#fff}
-.foot-bot{margin-top:44px;padding-top:20px;border-top:1px solid var(--line-d);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
-  font-family:var(--mono);font-size:12px;color:var(--mut-dark)}
+.foot-h{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-bottom:16px}
+.foot-col a{display:block;margin-bottom:9px;font-size:14px;transition:color .2s}.foot-col a:hover{color:var(--red)}
+.foot-bot{margin-top:44px;padding-top:20px;border-top:1px solid var(--line-l);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  font-family:var(--mono);font-size:12px;color:var(--t-mut)}
 @media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:28px}}
 
 /* reveal motion — enhancement only; nothing hidden without it */
