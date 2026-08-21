@@ -27,6 +27,21 @@
 
     });
 
+    // Deep-link category filters from the homepage tiles: product.html#spices etc.
+    var hashMap = {
+        rice: '.dry', grains: '.grains', superfood: '.SUPERFOOD', feed: '.feed',
+        vegetables: '.dehyd', fruits: '.fruits', spices: '.spices',
+        pulses: '.pulses', dairy: '.dairy', cotton: '.cotton'
+    };
+    function applyHashFilter(){
+        var key = (location.hash || '').replace('#', '').toLowerCase();
+        var f = hashMap[key];
+        if (!f) return;
+        $('ul.filters > li[data-filter="' + f + '"]').trigger('click');
+    }
+    $(window).on('hashchange', applyHashFilter);
+    applyHashFilter();
+
     $('.card').mouseenter(function(){
 
         $(this).find('.card-overlay').css({'top': '-100%'});
